@@ -1,4 +1,4 @@
-<?php
+<?php namespace Langemike\StoreHours;
 
 /**
  *
@@ -10,7 +10,7 @@ class StoreHoursTest extends PHPUnit_Framework_TestCase
      */
     protected function setUp()
     {
-        require_once __DIR__ . '/StoreHours.class.php';
+        require_once __DIR__ . '/StoreHours.php';
 
         date_default_timezone_set('UTC');
     }

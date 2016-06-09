@@ -1,4 +1,4 @@
-PHP Store Hours
+PHP Store Hours for Laravel
 ===============
 
 PHP Store Hours is a simple PHP class that outputs content based on time-of-day and-day-of-week. Simply include the script in any PHP page, adjust opening and closing hours for each day of the week and the script will output content based on the time ranges you specify.
@@ -140,3 +140,6 @@ Please report any bugs or issues here on GitHub. I'd love to hear your ideas for
 - [The Nevada Discovery Museum](http://www.nvdm.org/)
 - [Minne's Diner](http://www.minnesdiner.com/)
 - Want to showcase your site? Tweet [@coryetzkorn](http://twitter.com/coryetzkorn)
+
+### Credits
+Goes to [Cory Etzkorn](https://github.com/coryetzkorn/php-store-hours) for developing php-store-hours

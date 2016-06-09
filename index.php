@@ -34,7 +34,7 @@
     // Set your default time zone (listed here: http://php.net/manual/en/timezones.php)
     date_default_timezone_set('America/New_York');
     // Include the store hours class
-    require __DIR__ . '/StoreHours.class.php';
+    require __DIR__ . '/src/StoreHours.php';
 
     // REQUIRED
     // Define daily open hours
