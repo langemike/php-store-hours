@@ -10,6 +10,8 @@ class StoreHoursProvider extends ServiceProvider {
 	 */
 	protected $defer = false;
 
+	public $config = 'storehours';
+
 	/**
 	 * Bootstrap the application events.
 	 *
@@ -18,7 +20,7 @@ class StoreHoursProvider extends ServiceProvider {
 	public function boot()
 	{
         $this->publishes([
-            __DIR__.'/config.php' => config_path('storehours.php'),
+            __DIR__.'/config.php' => config_path($this->config . '.php'),
         ]);
 	}
 
@@ -30,9 +32,9 @@ class StoreHoursProvider extends ServiceProvider {
 	public function register()
 	{
 		$this->app->bind('storehours', function($app) {
-			$hours = [];
-			$exceptions = [];
-			$templates = [];
+	        $hours = $app['config']->get($this->config . '.hours', []);
+	        $exceptions = $app['config']->get($this->config . '.exceptions', []);
+	        $templates = $app['config']->get($this->config . '.template', []);
 			return new StoreHours($hours, $exceptions, $templates);
 		});
 	}
