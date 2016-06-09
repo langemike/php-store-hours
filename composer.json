@@ -1,12 +1,16 @@
 {
-    "name": "langemike/storehours",
-    "description": "Bringing storehours into Laravel",
+    "name": "langemike/php-store-hours",
+    "version": "0.1",
+    "description": "Bringing php-store-hours into Laravel",
 	"keywords": ["laravel","storehours", "openingtimes"],
 	"license": "MIT",
     "authors": [
         {
             "name": "Mike van Veenhuijzen",
             "email": "mikevv@gmail.com"
+        },
+        {
+            "name": "Cory Etzkorn"
         }
     ],
     "require": {
