@@ -29,7 +29,7 @@ class StoreHoursProvider extends ServiceProvider {
 	 */
 	public function register()
 	{
-		$this->app->bind('storehours', function() {
+		$this->app->bind('storehours', function($app) {
 			$hours = [];
 			$exceptions = [];
 			$templates = [];
