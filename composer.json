@@ -1,6 +1,6 @@
 {
     "name": "langemike/php-store-hours",
-    "version": "0.1",
+    "version": "0.2",
     "description": "Bringing php-store-hours into Laravel",
 	"keywords": ["laravel","storehours", "openingtimes"],
 	"license": "MIT",
