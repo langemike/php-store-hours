@@ -322,14 +322,14 @@ class StoreHours
 
         $ret = array();
 
-        foreach ($blocks as $block) {
+        foreach ($blocks as $blockData) {
             // Format days
 
             $keyparts     = array();
-            $keys         = $block['days'];
+            $keys         = $blockData['days'];
             $buffer       = array();
             $lastIndex    = null;
-            $minGroupSize = 3;
+            $minGroupSize = 2;
 
             foreach ($keys as $index) {
                 if ($lastIndex !== null && $index - 1 !== $lastIndex) {
@@ -357,7 +357,7 @@ class StoreHours
 
             // Combine
 
-            $ret[implode(', ', $keyparts)] = $this->hours_overview_format_hours($block['hours']);
+            $ret[implode(', ', $keyparts)] = $this->hours_overview_format_hours($blockData['hours']);
         }
 
         return $ret;
